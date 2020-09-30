@@ -31,7 +31,7 @@ object Entropy extends App{
     val p = nrX / nrTotal.toDouble  //cvt to double
     //check if p or q is zero, if so, then entropy = 1
     if ( p * (1-p) > 0.0)   -1 * (p * ln2(p ) + (1-p) * ln2(1-p) )
-    else 1.0
+    else 0.0
   }
   val entropyStickFigures = entropy(12, 7)
   // using 'C' type formatting, s = String f == float d= integer
