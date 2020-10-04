@@ -1,2 +1,2 @@
 # BigData
-Code ane discussion of BIg Data topics 2020 
+Code and discussion of Big Data/AI  topics 2020 
