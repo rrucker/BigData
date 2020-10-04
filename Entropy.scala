@@ -1,4 +1,4 @@
-/**Entropy calculations relevant to Ch 3 DataScience for Business\
+/**Entropy calculations relevant to Ch 3 DataScience for Business by Provost& Fawcett, StidckFigure esample
  * the PURPOSE of this approach (Informatin Gain), is to identify the most impactful features on which to segment your
  * training set. (NOTE: the code below is strictly scala, no Spark, so it will run anywher a scala compiler runs
  * e.g., Given  100 COLUMNS of features, which features  should you start to segment on ( dont' say the  computer will
@@ -29,7 +29,7 @@ object Entropy extends App{
   def entropy(nrTotal: I, nrX: I ):D   = {
     def ln2(x: D):D = log10(x)/log10(2)
     val p = nrX / nrTotal.toDouble  //cvt to double
-    //check if p or q is zero, if so, then entropy = 1
+    //check if p or q is zero, if so, then entropy = 0, i.e. there is no disorder/variety, hence no entropy
     if ( p * (1-p) > 0.0)   -1 * (p * ln2(p ) + (1-p) * ln2(1-p) )
     else 0.0
   }
